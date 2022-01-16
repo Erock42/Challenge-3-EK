@@ -12,14 +12,13 @@ var passwordText = document.querySelector("#password");
   }
         document.getElementById("password").value = password;
  }
- 
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
 
-  passwordText.value = password;
+  
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);

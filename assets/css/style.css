@@ -54,22 +54,6 @@ header {
   min-height: 100px;
 }
 
-input {
-  padding: 20px;
-  user-select: none;
-  height: 50px;
-  width: 400px;
-  border-radius: 6px;
-  border: none;
-  border: 2px solid black;
-  outline: none;
-  font-size: 22px;
-  }
- 
- input::placeholder{
-   font-size: 25px;
-  } 
-
 .card-footer {
   text-align: center;
 }
