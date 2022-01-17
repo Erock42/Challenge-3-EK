@@ -28,12 +28,9 @@ function writePassword() {
   if (numbers) password += (allowed.numbers = "1234567890");
   if (symbols) password += (allowed.symbols = "!@#$%^&*(){}[]=<>/,.");
 
-  for (var i = password.length; i < length; i++) password += randomNumber(randomNumber(allowed)); 
-  var randomNumber = Math.floor(Math.random() * length);
-   password += writePassword(randomNumber, randomNumber +1);
-  
-  
+  for (var i = password.length; i < length; i++) ; 
+  var randomNumber = Math.floor(Math.random() * allowed.length);
+  password += (randomNumber + allowed + [i])
 
-  document.getElementById("password").value =password;
+  document.getElementById("password").value = (password)
 }
-
