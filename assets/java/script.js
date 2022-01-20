@@ -28,12 +28,12 @@ function writePassword() {
   if (numbers) (allowed += "1234567890");
   if (symbols) (allowed += "!@#$%^&*(){}[]=<>/,.");
 
-  console.log (allowed)
+  //console.log (allowed)
 
   for (var i = password; i < length; i++) {
   var randomNumber = Math.floor(Math.random() * allowed.length);
   password += allowed.charAt(randomNumber)
-  console.log (password)
+  //console.log (password)
   }
 
   document.getElementById("password").value = (password)
